@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
-/*    "start": "http-server -a localhost -p 51186 -c-1 ./app", */
+    "start": "http-server -a localhost -p 51186 -c-1 ./js/app",
     "gulp": "gulp"
   },
   "repository": {
@@ -42,6 +42,7 @@
     "gulp-jscs": "^4.1.0",
     "gulp-server-livereload": "^1.9.2",
     "gulp-uglify": "^3.0.0",
-    "gulp-watch": "^5.0.0"
+    "gulp-watch": "^5.0.0",
+    "http-server": "^0.11.1"
   }
 }
