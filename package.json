@@ -1,0 +1,47 @@
+{
+  "name": "ng_sn",
+  "version": "1.0.0",
+  "description": "Angularjs & ServiceNow app",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+/*    "start": "http-server -a localhost -p 51186 -c-1 ./app", */
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhokhlovAnton/ng_sn.git"
+  },
+  "author": "Khokhlov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhokhlovAnton/ng_sn/issues"
+  },
+  "homepage": "https://github.com/KhokhlovAnton/ng_sn#readme",
+  "dependencies": {
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-ui": "~1.0.0",
+    "angular-ui-bootstrap": "~2.5.6",
+    "angularjs": "~0.0.1",
+    "bootstrap": "^4.0.0",
+    "chart.js": "^2.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "angular-base64": "^2.0.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.2.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-express": "^0.3.5",
+    "gulp-jscs": "^4.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0"
+  }
+}
