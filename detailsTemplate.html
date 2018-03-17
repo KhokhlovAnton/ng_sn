@@ -1,0 +1,39 @@
+<div id="popUpDialog-bg" ng-show="showPopUpDialog">
+    <div class="container">
+        <div class="row">
+            <fieldset class="for-panel">
+                <legend>Incident {{iNumber}}</legend>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-horizontal">
+                            <label class="col-xs-5 control-label">Short Description:</label>
+                            <p class="form-control-static">{{ shortDescription }}</p>
+                            <label class="col-xs-5 control-label">Caller: </label>
+                            <p class="form-control-static">{{ caller }}</p>
+                            <label class="col-xs-5 control-label">Description: </label>
+                            <p class="form-control-static">{{ description }}</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-horizontal">
+                            <label class="col-xs-4 control-label">Opened: </label>
+                            <p class="form-control-static">{{ opened }}</p>
+                            <label class="col-xs-4 control-label">Stage:</label>
+                            <p class="form-control-static">{{ iState }}</p>
+                            <label class="col-xs-4 control-label">Urgency:</label>
+                            <p class="form-control-static">{{ iUrgency }}</p>
+                            <label class="col-xs-4 control-label">Priority:</label>
+                            <p class="form-control-static">{{priority}}</p>
+                            <label class="col-xs-4 control-label">Close notes:</label>
+                            <p class="form-control-static">{{close_code}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pull-right">
+                    <button class="btn btn-lg btn-primary" ng-click="closePopUpDialog()">Close</button>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+
