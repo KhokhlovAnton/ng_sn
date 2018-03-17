@@ -1,0 +1,12 @@
+<div class="modal-backdrop fade in"></div>
+<div class="modal fade in" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+   <div class="loginmodal-container">
+        <h1>Login to Your Instance</h1><br>
+        <form method="POST">
+            <input type="url" name="instance" placeholder="Instance" ng-model="instance"/>
+            <input type="text" name="user" placeholder="Username"ng-model="umane"/>
+            <input type="password" name="pass" placeholder="Password"ng-model="pass"/>
+            <input type="submit" name="login" class="login loginmodal-submit" value="Login" ng-click="logon()"/>
+        </form>
+    </div>
+</div>

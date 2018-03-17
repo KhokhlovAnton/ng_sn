@@ -1,0 +1,59 @@
+<div class="col-sm-12 col-md-12 main">
+    <h1 class="page-header">Incidents</h1>
+
+    <div class="row placeholders">
+        <div class="col-xs-6 col-sm-4 placeholder">
+            <label for="pie">Incidents by state</label>
+            <canvas id="pie" class="chart chart-pie" chart-data="chartData" chart-labels="chartLabels" legend="true" style="display: block; width: 402px; height: 201px;"></canvas>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 placeholder">
+            <dl>
+                <dt ng-repeat="x in chartLabels">{{x}} : {{chartData[$index]}}</dt>
+            </dl>
+        </div>
+        <div class="col-xs-6 col-sm-4 placeholder">
+            <!-- add line chart -->
+        </div>
+    </div>
+
+    <div class="row placeholders">
+        <div class="col-sm-5">
+            <input type="text" ng-model="search" placeholder = 'Search incident or caller'>
+        </div>
+        <div class="col-sm-3">
+            <label for="State">State</label>
+            <select ng-model="selectedState" id="State" ng-options="x.label for x in state">
+                <option value="">All</option>
+            </select>
+        </div>
+        <div class="col-sm-3">
+            <label for="Urgency">Urgency</label>
+            <select ng-model="selectedUrgency" id="Urgency" ng-options="x.label for x in urgency">
+                <option value="">All</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <tr>
+                <th ng-click="orderByMe('number')"> # </th>
+                <th ng-click="orderByMe('urgency')">Urgency</th>
+                <th ng-click="orderByMe('uName')">Caller</th>
+                <th ng-click="orderByMe('opened_at')">Opened</th>
+                <th ng-click="orderByMe('state')">State</th>
+            </tr>
+            <tr ng-repeat="x in result  | filter:search
+                                    | filter: {state:selectedState.value}
+                                    | filter: {urgency:selectedUrgency.value}
+                                    | orderBy:myOrderBy">
+                <td ng-click="puDlg(x.sys_id)">{{ x.number }}</td>
+                <td ng-click="puDlg(x.sys_id)">{{ urgency[x.urgency].label }}</td>
+                <td ng-click="puDlg(x.sys_id)">{{ x.uName }}</td>
+                <td ng-click="puDlg(x.sys_id)">{{ formatDate(x.opened_at) |  date:'MM/dd/yyyy' }}</td>
+                <td ng-click="puDlg(x.sys_id)">{{ x.iState }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
