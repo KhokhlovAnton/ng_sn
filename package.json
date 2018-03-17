@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 51186 -c-1 ./js/app",
+    "start": "http-server -a localhost -p 51186 -c-1 ./",
     "gulp": "gulp"
   },
   "repository": {
@@ -32,6 +32,7 @@
     "@babel/core": "^7.0.0-beta.42",
     "@babel/preset-env": "^7.0.0-beta.42",
     "angular-base64": "^2.0.5",
+    "bootstrap.min.js": "^3.3.5",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^2.2.0",

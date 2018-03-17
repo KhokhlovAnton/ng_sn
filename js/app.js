@@ -13,10 +13,14 @@ var loginDir = ctrl.directive('loginDir', function(){
         scope: false,
         templateUrl: '../loginTemplate.html',
         controller: function( $scope ) {
+            $scope.isLoginDone = false;
+            $scope.logon = function() {
+                $scope.isLoginDone = true;
+            }
         }
     }
 });
-var dashDir = ctrl.directive('DashboardDir', function(){
+var dashDir = ctrl.directive('dashboardDir', function(){
     return {
         restrict: 'E',
         scope: false,
