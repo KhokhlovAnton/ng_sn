@@ -80,3 +80,184 @@
     background-color: #357ae8;
     /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
 }
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+    border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+    display: none;
+}
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+        border-right: 1px solid #eee;
+    }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+.main .page-header {
+    margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.placeholders h4 {
+    margin-bottom: 0;
+}
+.placeholder {
+    margin-bottom: 20px;
+}
+.placeholder img {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+fieldset.for-panel {
+    background-color: #fcfcfc;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding:15px 10px;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    background-color: #f9fdfd;
+    margin-bottom:12px;
+}
+fieldset.for-panel legend {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #4381ba;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 10px;
+    margin: inherit;
+    padding: 7px;
+    width: auto;
+    background-color: #d9edf7;
+    margin-bottom: 0;
+}
+
+popUpDialog-bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+#popUpDialog {
+    position: fixed;
+    width: 60%;
+    left: 30%;
+    margin-left: -125px;
+    margin-top: 5%;
+    padding: 15px;
+    border-radius: 5px;
+    background: white;
+}
+#popUpDialog .content {
+    margin-bottom: 15px;
+    text-align: center;
+}
+#popUpDialog .buttons-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    padding-top: 10px;
+}
+#popUpDialog-bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+#popUpDialog {
+    position: fixed;
+    width: 60%;
+    left: 30%;
+    margin-left: -125px;
+    margin-top: 5%;
+    padding: 15px;
+    border-radius: 5px;
+    background: white;
+}
+#popUpDialog .content {
+    margin-bottom: 15px;
+    text-align: center;
+}
+#popUpDialog .buttons-container {
+    width: 80%;
+    margin: 0 auto;
+}
