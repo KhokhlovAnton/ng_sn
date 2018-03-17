@@ -13,11 +13,11 @@ Available on:
 ##### you can change port as you wish in package.json.
 
 Now in your browser visit [localhost:51186](http://localhost:51186/)
-* You will see authorization form [](https://github.com/KhokhlovAnton/ng_sn/blob/master/img/login.png "Login form"). I use [angular-base64](https://www.npmjs.com/package/angular-base64) to create basic authorization
+* You will see authorization form [login](https://github.com/KhokhlovAnton/ng_sn/blob/master/img/login.png "Login form"). I use [angular-base64](https://www.npmjs.com/package/angular-base64) to create basic authorization
 * also you should enter instance url
 
-if you enter correct data you will see dashboard. (https://github.com/KhokhlovAnton/ng_sn/blob/master/img/dashboard.png "dashboard")
-detail view (https://github.com/KhokhlovAnton/ng_sn/blob/master/img/details.png "Detail")
+if you enter correct data you will see dashboard. [dashboard](https://github.com/KhokhlovAnton/ng_sn/blob/master/img/dashboard.png "dashboard")
+detail view [details](https://github.com/KhokhlovAnton/ng_sn/blob/master/img/details.png "Detail")
 
 points of test task
 - [x] connect to serviceNow and receive answer - done
